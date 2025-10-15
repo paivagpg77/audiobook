@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, hsl(141deg 75% 15%), hsl(141deg 75% 5%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Container central */
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+/* Capa do livro */
+.capa {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    object-fit: cover;
+}
+
+/* Títulos */
+h1 {
+    font-size: 22.4px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Controles (botões SVG) */
+.controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Tamanho dos botões */
+#anterior, #sucessor {
+    width: 35px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#play, #pause {
+    width: 65px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Efeito hover */
+.controles svg:hover {
+    transform: scale(1.2);
+    stroke: #00ff99;
+}
